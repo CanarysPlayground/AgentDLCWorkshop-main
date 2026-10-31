@@ -1,0 +1,82 @@
+
+{
+  "application": "Contoso Shop",
+  "pipeline": "Contoso-Shop-CI",
+  "latest_build": {
+    "build_id": "BUILD-1087",
+    "build_number": 1087,
+    "branch": "release/2.5.0",
+    "commit": "a81f3c9",
+    "status": "Failed",
+    "started_at": "2026-10-28T09:15:00Z",
+    "completed_at": "2026-10-28T09:19:42Z",
+    "duration_seconds": 282,
+    "triggered_by": "Michael Chen",
+    "environment": "Staging",
+    "failure_stage": "Integration Tests",
+    "failure_reason": "Payment callback validation returned HTTP 500 during the checkout integration test.",
+    "artifacts_published": false,
+    "test_results": {
+      "test_run_id": "TEST-RUN-562",
+      "status": "Failed",
+      "total": 120,
+      "passed": 112,
+      "failed": 6,
+      "skipped": 2,
+      "failed_tests": [
+        {
+          "test_id": "TC-401",
+          "name": "Checkout_PaymentCallback_ReturnsSuccess",
+          "error": "Expected HTTP 200 but received HTTP 500."
+        },
+        {
+          "test_id": "TC-402",
+          "name": "Checkout_OrderCreatedAfterPayment",
+          "error": "Order creation failed after payment callback processing failed."
+        },
+        {
+          "test_id": "TC-403",
+          "name": "Checkout_PaymentStatusUpdated",
+          "error": "Payment status was not updated."
+        },
+        {
+          "test_id": "TC-404",
+          "name": "Checkout_ConfirmationPageLoads",
+          "error": "Checkout did not complete."
+        },
+        {
+          "test_id": "TC-405",
+          "name": "Checkout_ConfirmationEmailTriggered",
+          "error": "Confirmation email was not triggered."
+        },
+        {
+          "test_id": "TC-406",
+          "name": "Checkout_PaymentRetry",
+          "error": "Payment retry returned an unexpected server error."
+        }
+      ]
+    }
+  },
+  "previous_build": {
+    "build_id": "BUILD-1086",
+    "build_number": 1086,
+    "branch": "release/2.5.0",
+    "commit": "7bc21d4",
+    "status": "Succeeded",
+    "started_at": "2026-10-27T16:38:00Z",
+    "completed_at": "2026-10-27T16:42:10Z",
+    "duration_seconds": 250,
+    "triggered_by": "Michael Chen",
+    "environment": "Staging",
+    "artifacts_published": true,
+    "test_results": {
+      "test_run_id": "TEST-RUN-561",
+      "status": "Passed",
+      "total": 118,
+      "passed": 118,
+      "failed": 0,
+      "skipped": 0,
+      "failed_tests": []
+    }
+  }
+}

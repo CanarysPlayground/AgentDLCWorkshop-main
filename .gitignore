@@ -1,0 +1,5 @@
+#ignore files
+*.env
+*.vscode
+*.azure
+*.venv

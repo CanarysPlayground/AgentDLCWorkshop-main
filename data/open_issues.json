@@ -1,0 +1,98 @@
+
+{
+  "application": "Contoso Shop",
+  "last_updated": "2026-10-28T10:30:00Z",
+  "issues": [
+    {
+      "id": "CS-241",
+      "title": "Checkout fails when payment provider sends callback",
+      "severity": "Critical",
+      "status": "Open",
+      "priority": "P1",
+      "assigned_to": "Michael Chen",
+      "component": "Payment Integration",
+      "reported_by": "Emily Davis",
+      "created_at": "2026-10-27T11:20:00Z",
+      "description": "The checkout flow returns HTTP 500 when processing the payment provider callback, preventing some customers from completing orders.",
+      "release_blocker": true
+    },
+    {
+      "id": "CS-242",
+      "title": "Order confirmation email is not sent after successful checkout",
+      "severity": "High",
+      "status": "Open",
+      "priority": "P1",
+      "assigned_to": "Alex Wilson",
+      "component": "Notifications",
+      "reported_by": "Sarah Johnson",
+      "created_at": "2026-10-27T14:05:00Z",
+      "description": "Orders are recorded, but customers do not receive confirmation emails because the notification service integration fails.",
+      "release_blocker": true
+    },
+    {
+      "id": "CS-243",
+      "title": "Cart total does not refresh after quantity changes",
+      "severity": "Medium",
+      "status": "Open",
+      "priority": "P2",
+      "assigned_to": "Priya Sharma",
+      "component": "Shopping Cart",
+      "reported_by": "Emily Davis",
+      "created_at": "2026-10-28T08:40:00Z",
+      "description": "The displayed subtotal remains unchanged until the page is refreshed after modifying a product quantity.",
+      "release_blocker": false
+    },
+    {
+      "id": "CS-244",
+      "title": "Inventory count becomes incorrect after concurrent orders",
+      "severity": "High",
+      "status": "Open",
+      "priority": "P1",
+      "assigned_to": "Daniel Lee",
+      "component": "Inventory",
+      "reported_by": "QA Team",
+      "created_at": "2026-10-28T09:10:00Z",
+      "description": "Concurrent purchases can decrement inventory incorrectly, potentially allowing customers to order out-of-stock products.",
+      "release_blocker": true
+    },
+    {
+      "id": "CS-245",
+      "title": "Expired access token causes an unhandled API error",
+      "severity": "Medium",
+      "status": "Open",
+      "priority": "P2",
+      "assigned_to": "Olivia Martin",
+      "component": "Authentication",
+      "reported_by": "QA Team",
+      "created_at": "2026-10-28T09:25:00Z",
+      "description": "Requests made with expired access tokens occasionally return HTTP 500 instead of a proper HTTP 401 response.",
+      "release_blocker": false
+    },
+    {
+      "id": "CS-246",
+      "title": "Product search ignores selected category filter",
+      "severity": "Medium",
+      "status": "Open",
+      "priority": "P2",
+      "assigned_to": "Daniel Lee",
+      "component": "Product Search",
+      "reported_by": "Sarah Johnson",
+      "created_at": "2026-10-28T09:45:00Z",
+      "description": "Search results include products outside the selected category, making it difficult for customers to find relevant items.",
+      "release_blocker": false
+    },
+    {
+      "id": "CS-247",
+      "title": "Product listing page loads slowly with large catalogs",
+      "severity": "Low",
+      "status": "Open",
+      "priority": "P3",
+      "assigned_to": "Priya Sharma",
+      "component": "Performance",
+      "reported_by": "QA Team",
+      "created_at": "2026-10-28T10:05:00Z",
+      "description": "The product listing page takes more than five seconds to load when the catalog contains a large number of products.",
+      "release_blocker": false
+    }
+  ]
+}

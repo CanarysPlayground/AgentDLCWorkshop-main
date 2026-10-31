@@ -1,0 +1,45 @@
+
+{
+  "application": "Contoso Shop",
+  "description": "E-commerce application for browsing products, managing shopping carts, and processing customer orders.",
+  "version": "2.5.0",
+  "environment": "Staging",
+  "release_target": "2026-11-05",
+  "overall_status": "At Risk",
+  "development_progress": {
+    "total_features": 12,
+    "completed_features": 9,
+    "in_progress_features": 2,
+    "blocked_features": 1
+  },
+  "recent_updates": [
+    {
+      "date": "2026-10-27",
+      "feature": "Shopping Cart",
+      "status": "Completed",
+      "details": "Cart quantity updates and item removal are implemented."
+    },
+    {
+      "date": "2026-10-27",
+      "feature": "Payment Integration",
+      "status": "In Progress",
+      "details": "Payment callback validation is being fixed after staging failures."
+    },
+    {
+      "date": "2026-10-28",
+      "feature": "Order Confirmation",
+      "status": "Blocked",
+      "details": "Order confirmation emails are delayed because the notification service integration is failing."
+    }
+  ],
+  "team": {
+    "project_manager": "Sarah Johnson",
+    "tech_lead": "Michael Chen",
+    "qa_lead": "Emily Davis"
+  },
+  "release_risks": [
+    "Payment callback validation is not fully verified.",
+    "Order confirmation notifications are blocked.",
+    "The latest staging build has failed."
+  ]
+}
